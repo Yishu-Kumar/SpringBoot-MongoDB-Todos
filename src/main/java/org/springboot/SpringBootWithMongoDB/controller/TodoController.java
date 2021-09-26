@@ -36,10 +36,6 @@ public class TodoController {
 
         try {
 
-//            todoDTO.setCreatedAt(new Date(System.currentTimeMillis()));
-//            todoDTO.setUpdatedAt(new Date(System.currentTimeMillis()));
-//
-//            todoRepository.save(todoDTO);
             todoService.createTodo(todoDTO);
 
             return new ResponseEntity<>(todoDTO, HttpStatus.OK);
